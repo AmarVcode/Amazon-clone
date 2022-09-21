@@ -7,10 +7,12 @@ nav{
     background-color:#232F3E;
     height: 60px;
     overflow: hidden;
+    padding: 10px;
 }
 
 nav img{
     height: 80px;
+    margin-top: -14px;
 }
 
 .offcanvas-start{
@@ -24,7 +26,7 @@ nav>button{
     color: white;
 }
 
-.btn{
+#deliver{
     color: white;
 }
 
@@ -50,4 +52,13 @@ nav>button{
 
 .offcanvas-body{
     text-align: center;
+}
+
+.offcanvas-body>input{
+    padding:5px;
+}
+
+#Country{
+    background: white;
+    width: 70px;
 }
