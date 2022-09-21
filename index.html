@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon By Amar</title>
+
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- My Internal Css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACGCAMAAAAiuXLkAAAAmVBMVEX///8jHx73pR4AAAD3nwDd3N33nQD3oQAfGxr7+/vx8fHu7u719fX3pBn3mwAKAAAaFRQQCQd6eHl/f3/W1taamZn//vr98N+Jh4jKysouKyvj4+OUk5M1MjJjYWHBwMH858z72a784cD4sEf4qzr70Jz4tVj++O/6zZP5vGv4slD6x4SjoqKwr69UUlJBPj5sa2v5wXf2kwDeNbdDAAAEw0lEQVR4nO1baXeqMBBVEgmI7CpuyK5SXOr7/z/uBWlrEql70i+5PUXKAHMzM5mZxNNOR0JCQkJCQkJCQkJCQkJC4mnog160Xfi+PxntpoYuWv10sQcYtoth45PQ3wnk0Ju4wHW6JDQXAH8oRr0xcWyt2wLbmfQF6I9moE37CeDA3wgT0Dr6Lzhgylm///vwm1gAc676Fzf0Yxvsec6G6U39OA52HAlotP81x7Vdh4kJ7TDgpn9LGwCEe2/iL2c2zcDmFoeDAzlYB2yN0+X5hOZlT3gRoCLAPRg/gohi4Bx4EfBdwtOhQUgWlBccXgT2RPoHESnpUyYAnKLQmBEhAGgZKeoCo/0FL2NRF2BcBh1Nsz9p0adLEuCWDI3edDfylvvDLGSKjkcR6PEi8I3+nDWyL5bAJf6cwOSvCOgDYzjdLXwqRwoioE+3C2/fbWYGVZAEEDAif1a3xA5bCsUQGH6GdntbKoTA8JOxuGACC+Bc1c6ZwHzf0pRpTKPEkYBxcBnlLrC12SwURYDRj5dj3jYazg1dUC34pPoODXg/JUlMKmY6r5BoPoUQ0MmOCHd+ZNUXQoA2gEtpEUKAMoC9oGQiglCnIpBpu5YOfwL0utCmhaGAcrwlLeDsaSHdlvMhsCDd7CwpGW0des3wNlBdF2MBSta1t1wIUDNN65Iigy6QjHneBXqU1OrHZxbofFYmI9rMo7MkuiiRHg8CO3qYzs8oh5ftGZcwHNKtiKY1SgajthbF5bE+ZTpgzV1uo50f2pf6OW1SeKyrnYsVAeEEDhtF09axftuDaVW57JguWRMQxgg9MhQ0wCUX9VrXQSf93SFZrZ0un2Tc2f2yUWrPcND3wFk/t65027ZVjpvTAUkP7PltlXYidlsUq599bw43GQH4XL+7mXuufXa25oLu5JxzRkDTAN2rdcbrOMFIg/HbKGxPX1edEHoRZe6d61B75eP0qKiWClV8QNXdFJJVfIvENIqi6fyGrceFokKzhoJhWum9BGIVlcG9N19BZiElz7M8zxWIGajJ3U/GSIXVyxTGSRoH6/V4PF4HBTaCercFOp11piKrjF+lQGBlKuojQxpX0IRola5fV70OGgJm/tjLEhw6ppoVL1IIqhzVvs9Ms3z00Q8Vhy5UV8nTM3idrCxoWhv8MkWBxcPPJyaqpw+Cq+SJiAzSDEJsRVjhP1KkqE/YMihhM4WhsiqCB16Aw/5DOT0Ls7i+cEToUQ80SJUvCtgXebmJ7/FGXBzzOgHhx5BVNE9ABcZPEcB+yK0ThRMJy8KmSON1O491kGLdlgW/Uh+E1ZfVUhUen9Rf55MMflFoIgLW+W11rIokTeMaaZpsqjLLsRD93IrdVv04rYQPzkFmZOkHQmcOtS3MWheuMVCFpw+IbzCJWxDMi3PgBvBpB3wjrpBFcbgC01Stkkq71b8HsvAVDt+hdVU7spSSzRzxO0pbpw6yDZ5c8DdL4CBFSlbFb0jfVxDERWlipyN08noDfI4DAa02b+x7rmIcpElRHVd1qc+zj/K4qeemENUMkQZ/oFlCQkJCQkJCQkJCQuIB6Oyp6P/FMAyjX/8O+roxwGd6v19/1GdiCAwGWB8+6Iau4yP+qdGvr4ghIHED/wEBPlQ7Z2MRggAAAABJRU5ErkJggg=="
+        type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <img src="http://www.userlogos.org/files/logos/ArkAngel06/Amazon.png"
+            alt="">
+            <button class="btn" id="deliver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Deliver to India</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose Your Loaction</h5>
+  </div>
+  <div class="offcanvas-body">
+    <p>Delivery options and delivery speeds may vary for different locations</p>
+    <button id="yellow-signin">sign in to see your address</button>
+    <hr>
+    or enter a US zip code
+  </div>
+</div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+
+    <!-- My Js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
