@@ -1,5 +1,6 @@
 body {
     font-family: "Amazon Ember", Arial, sans-serif;
+    background-color: rgb(230, 230, 230);
 }
 
 #nav {
@@ -233,3 +234,61 @@ font-size: 2.1vh;
     color: red;
     font-size: 2vh;
 }
+
+#main-container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+#main-head-1{
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    padding: 1vh;
+    font-size: 2.02vh;
+    text-align: center;
+    margin-top: -35vh;
+
+}
+
+.carousel-item{
+z-index: -1000;
+}
+
+
+.box1{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    margin-top: 40px;
+    gap: 2.8vh;
+    margin:3vh;
+    
+}
+
+.box1>div{
+    background-color: white;
+    padding: 2.8vh;
+    cursor: pointer;
+}
+
+.box1>div>h2{
+    font-size: 3.2vh;
+    font-weight: bold;
+}
+
+.box1-m{
+    display: grid;
+   grid-template-columns: auto auto;
+   gap: 1vh;
+cursor: pointer;
+}
+
+.box1-m>div>h3{
+    font-size: 2vh;
+}
+
+.box1 img{
+    width: 100%;
+    
+}
+
