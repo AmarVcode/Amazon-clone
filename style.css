@@ -287,8 +287,160 @@ cursor: pointer;
     font-size: 2vh;
 }
 
+.box1>div>p{
+    color: blue;
+}
+
 .box1 img{
     width: 100%;
     
 }
 
+.box2{
+    background-color: white;
+    max-width: 1300px;
+    margin: auto;
+    padding: 2.5vh;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box2>h1{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.box2>div{
+    display: flex;
+    gap: 20px;
+}
+
+
+.box3{
+    background-color: white;
+    max-width: 1300px;
+    margin: auto;
+    padding: 2.5vh;
+    margin-top: 20px;
+}
+
+.box3>h1{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.box3>div{
+    display: flex;
+}
+
+.last{
+    background-color: white;
+    text-align:center ;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.last>h5{
+    font-weight: bold;
+    font-size: 2.2vh;
+}
+
+.last>button{
+    width: 300px;
+    border-radius: 10px;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.last>p{
+    font-size: 2vh;
+}
+
+.upper-footer{
+    background-color: #232f3eda;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-footer{
+    background-color: #232f3e;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    padding: 100px;
+}
+
+.main-footer a{
+    display: inline-block;
+    width: 100%;
+    margin: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 2.3vh;
+}
+
+.main-footer a:hover{
+    text-decoration: underline;
+}
+
+.bottom-footer{
+    display: flex;
+    background-color: #232F3E;
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 20px;
+    padding-left: 32%;
+    gap: 40px;
+    color: white;
+}
+
+.bottom-footer img{
+width: 10vh;
+
+}
+
+.last-footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 15% 15% 10% 12% 15% 18%;
+    padding: 100px;
+    gap: 20px;
+}
+
+.last-footer a{
+color: rgba(216, 216, 216, 0.767);
+font-size: 1.7vh;
+text-decoration: none;
+}
+
+.last-footer h1{
+    font-size: 2vh;
+    margin-top: 40px;
+}
+
+.last-last-footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.8vh;
+}
+
+.last-last-footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.8vh;
+}
+
+.last-last-footer a:hover{
+    text-decoration: underline;
+    
+}
