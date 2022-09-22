@@ -20,7 +20,7 @@
 
 <body>
     <nav>
-        <div>
+        <div class="imgdiv-nav">
             <img src="http://www.userlogos.org/files/logos/ArkAngel06/Amazon.png" alt="">
         </div>
         <div>
@@ -28,18 +28,43 @@
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Deliver to
                 <b>India</button></b></button>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas offcanvas-start offcanvas-start-1" data-bs-scroll="true" tabindex="-1"
+                id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose Your Loaction</h5>
                 </div>
-                <div class="offcanvas-body">
-                    <p>Delivery options and delivery speeds may vary for different locations</p>
+                <div class="offcanvas-body" id="choose-location">
+                    <p class="mini-p">Delivery options and delivery speeds may vary for different locations</p>
                     <button id="yellow-signin">sign in to see your address</button>
+                    <form action="">
+                        <hr>
+                        or enter a US zip code<br>
+                        <input type="number" placeholder="Enter Zip code"><input type="button" value="Apply">
+                    </form>
                     <hr>
-                    or enter a US zip code<br>
-                    <input type="text"> <button type="button" class="btn btn-outline-dark">Apply</button>
-
+                    <select name="" id="Country2" type="button" class="btn btn-light">
+                        <option value="#">India</option>
+                        <option value="#">America</option>
+                        <option value="#">Australia</option>
+                        <option value="#">Russia</option>
+                        <option value="#">Brazil</option>
+                        <option value="#">Veitnam</option>
+                        <option value="#">Japan</option>
+                        <option value="#">India</option>
+                        <option value="#">America</option>
+                        <option value="#">Australia</option>
+                        <option value="#">Russia</option>
+                        <option value="#">Brazil</option>
+                        <option value="#">Veitnam</option>
+                        <option value="#">Japan</option>
+                        <option value="#">India</option>
+                        <option value="#">America</option>
+                        <option value="#">Australia</option>
+                        <option value="#">Russia</option>
+                        <option value="#">Brazil</option>
+                        <option value="#">Veitnam</option>
+                        <option value="#">Japan</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -72,52 +97,101 @@
                 <option value="#">Japan</option>
             </select>
             <input type="text" id="search">
-            <input id="nav-search-submit-button" type="submit" class="nav-input nav-progressive-attribute" value="Go" tabindex="0">
+            <input id="nav-search-submit-button" type="submit" class="nav-input nav-progressive-attribute" value="Go"
+                tabindex="0">
         </div>
-       
+
 
         <div class="rightnav">
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle rightnav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  English
+                <a class="btn btn-secondary dropdown-toggle rightnav-btn" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    English
                 </a>
-              
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Choose Language</a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" name="language" id=""> English - EN</a></li><hr>
-                  <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Espanol - ES</a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Arbia - AR</a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Deutuch - DE</a></li>
-                  <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Hummty - HE</a></li>
-                  <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Korean - KO</a></li>
-                  <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Portuguese - PT</a></li><hr>
-                  <li><a class="dropdown-item" href="#">Change Currency</a></li>
-                  <li><a class="dropdown-item" href="#">$ - USD - US</a></li>
-                  <div style="margin:10px ; font-size:13px; color: blue;">
-                    Change Country/Region
-                  </div>
-                </ul>
-              </div>
 
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle rightnav-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Hello, Sign in
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Choose Language</a></li>
+                    <li><a class="dropdown-item" href="#"><input type="radio" name="language" id=""> English - EN</a>
+                    </li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Espanol - ES</a></li>
+                    <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Arbia - AR</a></li>
+                    <li><a class="dropdown-item" href="#"><input type="radio" name="language"> Deutuch - DE</a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Hummty - HE</a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Korean - KO</a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" name="language"> Portuguese - PT</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#">Change Currency</a></li>
+                    <li><a class="dropdown-item" href="#">$ - USD - US</a></li>
+                    <div style="margin:10px ; font-size:13px; color: blue;">
+                        Change Country/Region
+                    </div>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle rightnav-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Hello, Sign in
                 </button>
                 <div class="dropdown-menu" id="sign-in-nav">
-                 <button>Sign In</button>
-                 <p>New Customer ? <a href="#">Start Here</a></p>
-                 <hr>
-                 <div>
-                    <div>
-                        <h5>Your Lists</h5>
-                        <a href="#">Create a List</a>
-                        <a href="#">Find a list or registry</a>
-                        <a href="#">Amazon Charity List</a>
+                    <button>Sign In</button>
+                    <p>New Customer ? <a href="#">Start Here</a></p>
+                    <hr>
+                    <div class="nav-sign-list-opt">
+                        <div>
+                            <h5>Your Lists</h5>
+                            <a href="#">Create a List</a>
+                            <a href="#">Find a list or registry</a>
+                            <a href="#">Amazon Charity List</a>
+                        </div>
+
+                        <div>
+                            <h5>Your Account</h5>
+                            <a href="#">Accounts</a>
+                            <a href="#">Orders</a>
+                            <a href="#">Reccomendetions</a>
+                            <a href="#">Browsing History</a>
+                            <a href="#">Watch list</a>
+                            <a href="#">Video Purchases & Rental</a>
+                            <a href="#">Kindle Unlimeted</a>
+                            <a href="#">Content & Devices</a>
+                            <a href="#">Subscribe & Save Items</a>
+                            <a href="#">Memberships & Subscription</a>
+                            <a href="#">Music & Library</a>
+                        </div>
                     </div>
-                    <div></div>
-                 </div>
                 </div>
-              </div>
+            </div>
+
+            <button class="order-cart">
+                Orders
+            </button>
+
+            <button class="order-cart">
+                Cart
+            </button>
+        </div>
+    </nav>
+    <nav id="i-am-also-nav">
+        <div id="mininav-offcanvas">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" id="mininav-offcanvas-btn"
+                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                |||Menu
+            </button>
+
+            <div class="offcanvas offcanvas-start offcanvas-start-2" data-bs-backdrop="static" tabindex="-1"
+                id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        I will not close if you click outside of me.
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 

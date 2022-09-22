@@ -1,78 +1,90 @@
-body{
-    font-family: "Amazon Ember",Arial,sans-serif;
+body {
+    font-family: "Amazon Ember", Arial, sans-serif;
 }
 
-nav{
+nav {
     display: flex;
-    background-color:#232F3E;
-    height: 60px;
-    padding: 10px;
+    background-color: #232F3E;
+    height: 8vh;
+    padding: 1vh;
 }
 
-nav img{
-    height: 80px;
-    margin-top: -14px;
+
+
+.imgdiv-nav {
+    overflow: hidden;
+    height: 10vh;
+    width: 20vh;
 }
 
-.offcanvas-start{
-    max-height: 50%;
+.imgdiv-nav>img {
+    position: relative;
+    bottom: 3.5vh;
+    width: 100%;
+}
+
+.offcanvas-start-1 {
+    max-height: 55%;
     margin: auto;
     border-radius: 20px;
+    text-align: center;
 }
 
-nav>button{
+nav>button {
     background-color: transparent;
     color: white;
 }
 
-#deliver{
+#deliver {
     color: white;
 }
 
-#deliver:hover{
+#deliver:hover {
     color: white;
     border: 1px solid white;
 }
 
-#offcanvasWithBothOptionsLabel{
+#offcanvasWithBothOptionsLabel {
     background: rgba(128, 128, 128, 0.274);
     width: 100%;
     padding: 5px;
     border-radius: 10px;
-    
+
 }
 
-#yellow-signin{
+#yellow-signin {
     background: rgb(255, 230, 0);
     width: 100%;
     border-radius: 10px;
     border: none;
+    padding: 5px;
 }
 
-.offcanvas-body{
-    text-align: center;
+#yellow-signin:hover {
+    background: rgb(226, 204, 0);
+    
 }
 
-.offcanvas-body>input{
-    padding:5px;
-}
 
-#Country{
+#Country {
     background: white;
+    width: 10vh;
 }
 
-#search{
-    width: 65%;
+
+
+#search {
+    width: 80vh;
     padding: 4px;
 }
 
-.middle-nav{
-    width: 50%;
+.middle-nav {
+    display: flex;
 }
 
-#nav-search-submit-button{
+#nav-search-submit-button {
     padding: 5px;
-    width: 5%;
+    width: 10vh;
     border-radius: 5px;
     color: white;
     background: orange;
@@ -80,32 +92,121 @@ nav>button{
     margin-right: 1px;
 }
 
-.rightnav{
+.rightnav {
     display: flex;
     background-color: inherit;
+
 }
 
-.rightnav-btn{
-    background-color:#232F3E;
+.rightnav-btn {
+    background-color: #232F3E;
     border: 1px solid #232F3E;
+    height: 6vh;
 }
 
-.rightnav-btn:hover{
+.rightnav-btn:hover {
     border: 1px solid white;
 }
 
-#sign-in-nav{
+#sign-in-nav {
     width: 500px !important;
     text-align: center;
+    font-size: 2vh;
 }
 
-#sign-in-nav>button{ 
+#sign-in-nav>button {
     color: white;
-    background: linear-gradient(180deg,white -10px,orange );
+    background: linear-gradient(180deg, white -10px, orange);
     border: none;
     width: 200px;
     margin: auto;
     padding: 5px;
     border-radius: 5px;
     margin: auto;
+}
+
+.nav-sign-list-opt {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    cursor: pointer;
+}
+
+.nav-sign-list-opt>div {
+    text-align: left;
+    margin: 10px;
+
+}
+
+.nav-sign-list-opt>div:nth-child(1) {
+    border-right: 1px solid grey;
+}
+
+.nav-sign-list-opt>div>a {
+    color: grey;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-sign-list-opt>div>a:hover {
+    color: orange;
+    text-decoration: underline;
+    transition: 100ms;
+}
+
+.order-cart {
+    margin: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0vh 2vh;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.order-cart:hover {
+    border: 1px solid white;
+}
+
+#Country2 {
+    border: 1px solid grey;
+    background-color: white;
+    width: 100%;
+}
+
+
+#choose-loaction {
+    text-align: center;
+}
+
+#choose-loaction {
+    padding: 5px;
+}
+
+
+
+.mini-p{
+    font-size: 2vh;
+    
+}
+
+#location-form-nav{
+    border: 1px soid grey;
+}
+
+#i-am-also-nav{
+    display: flex;
+    padding: 0vh;
+    background-color: #232f3eda;
+    height: fit-content;
+}
+
+#mininav-offcanvas-btn{
+    background-color: #232f3e00;
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 1px solid white;
+    margin-left: 1vh;
 }
