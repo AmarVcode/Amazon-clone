@@ -444,3 +444,14 @@ text-decoration: none;
     text-decoration: underline;
     
 }
+
+img{
+        cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+img:hover{
+    transform:scale(1.2);
+
+    border-radius: 10px;
+}
